@@ -314,7 +314,7 @@ def create_app():
     x = app.winfo_screenwidth() // 2 - width // 2
     y = (app.winfo_screenheight() // 2 - height // 2) - 25
     app.geometry(f'{width}x{height}+{x}+{y}')
-    app.resizable(False,False)
+    app.resizable(True,True)
     
     loginpage = ctk.CTkFrame(app,fg_color="#D3D2D2",width=width,height=height,corner_radius=0)
     loginpage.grid_columnconfigure((0,1),weight=1)
